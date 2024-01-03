@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app:
+    container_name: sophomore-final-db
+    image: ylin94/python_dev:3.11
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/app
+    working_dir: '/app'
